@@ -15,7 +15,6 @@ jobs:
     - uses: actions/checkout@v4.1.0
       with:
         fetch-depth: 20
-        lfs: true
     - run: echo "Building the application..."
   test_file:
     needs: build1
@@ -27,5 +26,4 @@ jobs:
     - uses: actions/checkout@v4.1.0
       with:
         fetch-depth: 20
-        lfs: true
     - run: echo "Running tests..running"
